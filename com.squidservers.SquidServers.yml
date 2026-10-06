@@ -22,6 +22,17 @@ finish-args:
   - --filesystem=/run/media:ro
 
 modules:
+  - name: unappimage
+    buildsystem: simple
+    build-options:
+      cflags: "-std=gnu89"
+    build-commands:
+      - make -C squashfs-tools install INSTALL_DIR=/app/bin
+    sources:
+      - type: git
+        url: https://github.com/refi64/unappimage
+        commit: d7f86f2a0d7ec3a69211125207d5f127386b849a
+
   - name: squidservers
     buildsystem: simple
     build-commands:
