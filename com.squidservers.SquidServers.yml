@@ -1,9 +1,9 @@
 app-id: com.squidservers.SquidServers
 runtime: org.freedesktop.Platform
-runtime-version: "24.08"
+runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: "24.08"
+base-version: "25.08"
 command: squidservers
 separate-locales: false
 
@@ -11,13 +11,13 @@ finish-args:
   # Network access for Minecraft servers, auth, modpack downloads, and tunnels
   - --share=network
   - --share=ipc
-  - --socket=x11
   - --socket=wayland
+  - --socket=fallback-x11
   - --socket=pulseaudio
   - --device=dri
-  # Filesystem permissions for server directories, world backups, and imports
-  - --filesystem=home
+  # Filesystem permissions for server directories, world backups, and downloads
   - --filesystem=xdg-documents
+  - --filesystem=xdg-download
   - --filesystem=/media:ro
   - --filesystem=/run/media:ro
 
