@@ -44,7 +44,7 @@ modules:
     sources:
       - type: extra-data
         filename: squidservers.AppImage
-        url: https://cdn.squidservers.com/squidservers-latest.AppImage
+        url: https://cdn.squidservers.com/v0.9.11/squidservers-0.9.11-x86_64.AppImage
         sha256: 3d773857bdd97625abee34cbf718d3e46f5a19689e8390f3bef583c63d4597a3
         size: 213531029
       - type: file
