@@ -31,6 +31,21 @@
   <url type="bugtracker">https://support.squidservers.com</url>
   <url type="help">https://support.squidservers.com</url>
 
+  <screenshots>
+    <screenshot type="default">
+      <caption>SquidServers server dashboard and performance monitoring</caption>
+      <image>https://raw.githubusercontent.com/SquidServers/flathub/com.squidservers.SquidServers/screenshots/server-dashboard.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Minecraft server configuration and setup wizard</caption>
+      <image>https://raw.githubusercontent.com/SquidServers/flathub/com.squidservers.SquidServers/screenshots/setup-wizard.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Server overview with quick actions and connection address</caption>
+      <image>https://raw.githubusercontent.com/SquidServers/flathub/com.squidservers.SquidServers/screenshots/server-overview.png</image>
+    </screenshot>
+  </screenshots>
+
   <provides>
     <binary>squidservers</binary>
   </provides>
